@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/address")
+@RequestMapping
 @CrossOrigin
 @Api(tags = {"Address"})
 public class AddressController {
