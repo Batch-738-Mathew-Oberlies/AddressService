@@ -3,7 +3,7 @@
     <Appenders>
         <Gelf name="graylog" host="udp:lab.5x5code.com" port="12201" version="1.0" extractStackTrace="true"
               filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192"
-              originHost="address.int.lab.5x5code.com"
+              originHost="address.svc.int.lab.5x5code.com"
               additionalFieldTypes="fieldName1=String,fieldName2=Double,fieldName3=Long"
               ignoreExceptions="true">
             <Field name="timestamp" pattern="%d{dd MMM yyyy HH:mm:ss,SSS}"/>
