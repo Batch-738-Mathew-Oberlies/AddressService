@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
@@ -115,7 +114,6 @@ public class LoggingAspect {
 	private String getPayload() {
 		if (request == null) return "";
 		StringBuilder builder = new StringBuilder();
-		ServletInputStream stream = null;
 		BufferedReader reader = null;
 		try {
 			reader = request.getReader();
